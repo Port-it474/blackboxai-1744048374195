@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickDeliver - Multi-Vendor Delivery App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-bolt text-yellow-500 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">QuickDeliver</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#" class="text-gray-800 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#" class="text-gray-500 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium">Food</a>
+                        <a href="#" class="text-gray-500 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium">Grocery</a>
+                        <a href="#" class="text-gray-500 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium">Quick Commerce</a>
+                        <a href="#" class="text-gray-500 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium">Vendors</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        <i class="fas fa-sign-in-alt mr-2"></i>Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-yellow-400 to-yellow-600">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    Order Anything, Anytime
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl text-yellow-100">
+                    Fast delivery from multiple vendors in your area
+                </p>
+                <div class="mt-10 relative rounded-md shadow-sm max-w-md mx-auto">
+                    <input type="text" class="focus:ring-yellow-500 focus:border-yellow-500 block w-full pl-4 pr-12 py-4 text-lg border-gray-300 rounded-md" placeholder="Search for food, groceries...">
+                    <div class="absolute inset-y-0 right-0 flex items-center">
+                        <button class="bg-yellow-700 text-white px-6 py-3 rounded-r-md">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8">Shop by Category</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Food Category -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" alt="Food" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Food & Restaurants</h3>
+                    <p class="text-gray-600 mb-4">Order from your favorite restaurants and food vendors</p>
+                    <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">Browse Food <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Grocery Category -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <img src="https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg" alt="Grocery" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Grocery</h3>
+                    <p class="text-gray-600 mb-4">Fresh produce, pantry staples and household essentials</p>
+                    <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">Browse Grocery <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Commerce -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <img src="https://images.pexels.com/photos/4393667/pexels-photo-4393667.jpeg" alt="Quick Commerce" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Quick Commerce</h3>
+                    <p class="text-gray-600 mb-4">Get anything delivered in under 30 minutes</p>
+                    <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">Browse Quick Items <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Vendors -->
+    <div class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Featured Vendors</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg" alt="Vendor 1" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-medium text-gray-800">FreshMart</h3>
+                    <p class="text-sm text-gray-500">Grocery</p>
+                    <div class="mt-2 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg" alt="Vendor 2" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-medium text-gray-800">Burger Palace</h3>
+                    <p class="text-sm text-gray-500">Food</p>
+                    <div class="mt-2 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://images.pexels.com/photos/3653849/pexels-photo-3653849.jpeg" alt="Vendor 3" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-medium text-gray-800">QuickStop</h3>
+                    <p class="text-sm text-gray-500">Quick Commerce</p>
+                    <div class="mt-2 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg" alt="Vendor 4" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-medium text-gray-800">Pizza Heaven</h3>
+                    <p class="text-sm text-gray-500">Food</p>
+                    <div class="mt-2 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">QuickDeliver</h3>
+                    <p class="text-gray-400">Your one-stop solution for all delivery needs from multiple vendors.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Food</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Grocery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Quick Commerce</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 QuickDeliver. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple cart functionality
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        function addToCart(productId) {
+            // In a real app, this would add the product to cart
+            cart.push(productId);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Item added to cart!');
+        }
+    </script>
+</body>
+</html>
